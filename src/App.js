@@ -111,7 +111,7 @@ function App() {
                 <td>{userRewards[3]["rewards"]}</td>
               </tr>
               <tr>
-                <td>Total Reward</td>
+                <td>Total Rewards</td>
                 <td>{userRewards[1]["rewards"] + userRewards[2]["rewards"] + userRewards[3]["rewards"]}</td>
               </tr>
             </tbody>
