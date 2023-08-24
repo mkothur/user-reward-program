@@ -76,8 +76,8 @@ function App() {
     setNewTransaction({ date: new Date(), amount: 0 });
   }
   return (
-    <div style={{textAlign: 'center'}}> 
-      <h2>User Rewards Program</h2>
+    <div> 
+      <h2 style={{marginLeft: '5rem'}}>User Rewards Program</h2>
       <div className="select-style">
         <select onChange={e => userSelect(e.target.value)} value={currentUser} >
           <option value="" disabled>Select User</option>
@@ -89,7 +89,7 @@ function App() {
         </select>
       </div> <br/><br/>
       {Object.keys(userRewards).length > 0 &&
-        <div style={{marginLeft: '50px'}}>
+        <div style={{marginLeft: '5rem'}}>
           <table className="customers">
             <thead>
               <tr>
@@ -138,8 +138,8 @@ function App() {
               </tbody>
             </table>
             : <div>No Transactions available</div>}
-          <div>
-            <h4>Add Transactions</h4>
+          <div style={{margin: '4rem 0'}}>
+            <h4>Add Transactions:</h4>
             <h5>Transactions between 01/01/2023 and 03/31/2023 will be only added</h5>
             <label>Date : </label><input type="date" name="date" value={newTransaction.date} onChange={(e) => updateInput(e)}></input>
             <label>Amount :</label><input type="number" name="amount" value={newTransaction.amount} onChange={(e) => updateInput(e)}></input>

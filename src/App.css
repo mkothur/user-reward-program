@@ -1,62 +1,36 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --main: #f1f1f1;
+  --primary: #dad7cd;
+  --column: grey;
+  --btn: burlywood;
+}
 body {
-       
-  background: ivory;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #bae9f7;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  
+  background: var(--main);
+  margin: 0;
+  font-family: "Poppins";
+}
   .select-style {
-    border: 1px solid #ccc;
-    width: 200px;
-    border-radius: 3px;
+    width: 12rem;
+    border-radius: 2rem;
     overflow: hidden;
-    font-size: 20px;
-    background: olive  no-repeat 90% 50%;
-    margin-left: 50px;
+    font-size: 0.2rem;
+    background: #dad7cd  no-repeat 90% 50%;
+    margin-left: 5rem;
   }
   
   .select-style select {
-    padding: 5px 8px;
+    padding: 0.2rem 0.3rem;
     width: 130%;
-    font-size: 20px;
+    font-size: 1.2rem;
     border: none;
     box-shadow: none;
-    background: rgb(194, 190, 156);
+    background: var(--primary);    
     background-image: none;
+    text-align: left;
   }
   
   .select-style select:focus {
@@ -64,12 +38,11 @@ body {
   }
   
   .select-style option{
-    font-size: 20px;
+    font-size: 1rem;
   }
   
-  
   .customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: "Poppins" Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 50%;
   }
@@ -87,24 +60,30 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: grey;
+    background-color: var(--column);
     color: white;
   }
   
   button {
-    background-color: lightgreen;
-    width: 140px;
-    height: 35px;
-    font-size: 16px;
+    
+    /*width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    border: 1rem; */
+    background-color: var(--btn);
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3rem;
   }
   
   input{
-    width: 170px;
-    height: 30px;
-    font-size: 16px;
-    margin-right: 10px;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    margin-right: 1rem;
   }
   label{
-    margin-left: 40px;
-    margin-right: 10px;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
